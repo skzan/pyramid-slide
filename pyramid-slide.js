@@ -17,7 +17,7 @@ function drawPyramid() {
             rowStr += spaceChar;
         }
         for (var i = 0; i < numBricks; i++) {
-            rowStr += "#";
+            rowStr += "";
         }
 
         rowElem = document.createElement("p");
