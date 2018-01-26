@@ -11,19 +11,18 @@ function drawPyramid() {
         var numSpaces = height - row - 1;
 
         var rowStr = "";
-
         for (var i = 0; i < numSpaces; i++) {
             var spaceChar = "&nbsp";
             rowStr += spaceChar;
         }
         for (var i = 0; i < numBricks; i++) {
-            rowStr += "";
+            rowStr += symbol;
         }
 
         rowElem = document.createElement("p");
         rowElem.innerHTML = rowStr;
         document.getElementById("pyramid").appendChild(rowElem);
-
         document.getElementById("pyramidHeight").innerHTML = height;
     }
 };
+drawPyramid()
